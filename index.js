@@ -31,7 +31,7 @@ function animatePress(currentColor){
         $("#"+currentColor).removeClass("pressed");
     }, 100);
 }
-$(document).keydown(function(){
+$(document).on('click touchstart',function(){
     if(start==true){
         $("#level-title").text("Level " + level);
         nextSequence();
